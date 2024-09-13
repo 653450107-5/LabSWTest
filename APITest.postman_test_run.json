@@ -1,0 +1,194 @@
+{
+	"id": "a7ba1e8d-75e9-4f55-b56c-7f2daa29cf56",
+	"name": "APITest",
+	"timestamp": "2024-09-13T09:11:50.441Z",
+	"collection_id": "38324430-b56f8ecb-04f9-41c9-a163-c6709102eb64",
+	"folder_id": 0,
+	"environment_id": "38324430-ef4aca27-4b67-4bc5-bf4b-614ac1b4b549",
+	"totalPass": 12,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-09-13T09:11:49.167Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ef16cb27-7106-4d09-845b-b9192b77d8ac",
+			"name": "Get post",
+			"url": "https://jsonplaceholder.typicode.com//posts",
+			"time": 61,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Respond Body is success": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respond Body is success": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				61
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Respond Body is success": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "39ace1ee-2d06-4e71-93fe-fe904d474ebc",
+			"name": "Post a post",
+			"url": "https://jsonplaceholder.typicode.com//posts",
+			"time": 293,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Successful POST request": true,
+				"Status code name has string": true,
+				"Respond body success": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respond body success": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				293
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Successful POST request": true,
+					"Status code name has string": true,
+					"Respond body success": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "1f80a95c-5216-4ba6-ac52-e8b4a54a6527",
+			"name": "Update post",
+			"url": "https://jsonplaceholder.typicode.com//posts/1",
+			"time": 306,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Respond body": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respond body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				306
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Respond body": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "12db9034-1b22-46be-b402-cd0e34c3de9d",
+			"name": "Delete a post",
+			"url": "https://jsonplaceholder.typicode.com//posts/1",
+			"time": 292,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Respond body is {}": true
+			},
+			"testPassFailCounts": {
+				"Respond body is {}": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				292
+			],
+			"allTests": [
+				{
+					"Respond body is {}": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 952,
+	"collection": {
+		"requests": [
+			{
+				"id": "ef16cb27-7106-4d09-845b-b9192b77d8ac",
+				"method": "GET"
+			},
+			{
+				"id": "39ace1ee-2d06-4e71-93fe-fe904d474ebc",
+				"method": "POST"
+			},
+			{
+				"id": "1f80a95c-5216-4ba6-ac52-e8b4a54a6527",
+				"method": "PUT"
+			},
+			{
+				"id": "12db9034-1b22-46be-b402-cd0e34c3de9d",
+				"method": "DELETE"
+			}
+		]
+	}
+}
